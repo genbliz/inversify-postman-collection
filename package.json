@@ -12,7 +12,8 @@
   "scripts": {
     "pub": "pika publish",
     "inst": "pika install",
-    "build": "pika build"
+    "build": "pika build",
+    "version": "npm run build"
   },
   "repository": {
     "type": "git",
