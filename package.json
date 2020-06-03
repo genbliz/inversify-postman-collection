@@ -1,0 +1,57 @@
+{
+  "name": "inversify-postman-collection",
+  "version": "1.0.0",
+  "description": "convert inversify route to postman collection",
+  "esnext": "dist-src/index.js",
+  "main": "dist-node/index.js",
+  "types": "dist-types/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist-*/"
+  ],
+  "scripts": {
+    "pub": "pika publish",
+    "inst": "pika install",
+    "build": "pika build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/genbliz/inversify-postman-collection.git"
+  },
+  "keywords": [
+    "inversify",
+    "postman",
+    "postman-collection",
+    "route"
+  ],
+  "author": "Chris Uzoh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/genbliz/inversify-postman-collection/issues"
+  },
+  "homepage": "https://github.com/genbliz/inversify-postman-collection#readme",
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg"
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-types"
+      ]
+    ]
+  },
+  "dependencies": {
+    "postman-collection": "^3.6.1"
+  },
+  "devDependencies": {
+    "@pika/pack": "^0.5.0",
+    "@pika/plugin-build-node": "^0.9.2",
+    "@pika/plugin-build-types": "^0.9.2",
+    "@pika/plugin-standard-pkg": "^0.9.2",
+    "@types/postman-collection": "^3.5.3",
+    "typescript": "^3.9.3"
+  }
+}
