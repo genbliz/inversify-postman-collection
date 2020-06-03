@@ -6,7 +6,7 @@ import {
   RequestDefinition,
 } from "postman-collection";
 
-interface IRouteDefData {
+export interface IRouteDefData {
   [n: string]: Record<
     string,
     {
@@ -17,7 +17,7 @@ interface IRouteDefData {
   >;
 }
 
-interface IInversifyRouteDefInput {
+export interface IInversifyRouteDefInput {
   controller: string;
   endpoints: {
     route: string;
@@ -25,7 +25,7 @@ interface IInversifyRouteDefInput {
   }[];
 }
 
-interface IInversifyOutputCustom {
+export interface IInversifyOutputCustom {
   group: string;
   endpoints: {
     title: string;
