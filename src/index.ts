@@ -85,7 +85,7 @@ function getRouteDefData({
       const _def = _getDef();
       const _method = method.toUpperCase();
 
-      console.log({ _def });
+      // console.log({ _def });
 
       if (_def) {
         if (
@@ -105,7 +105,7 @@ function getRouteDefData({
       requestBody = undefined;
       responseBody = undefined;
       routeDescribe = null;
-      console.log(error);
+      // console.log(error);
     }
   }
   // console.log({ requestBody, responseBody, routeDescribe });
