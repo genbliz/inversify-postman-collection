@@ -45,15 +45,15 @@
     ]
   },
   "dependencies": {
-    "postman-collection": "^3.6.1"
+    "postman-collection": "^3.6.1",
+    "@types/postman-collection": "^3.5.3"
   },
   "devDependencies": {
     "@pika/pack": "^0.5.0",
     "@pika/plugin-build-node": "^0.9.2",
     "@pika/plugin-build-types": "^0.9.2",
     "@pika/plugin-standard-pkg": "^0.9.2",
-    "@types/postman-collection": "^3.5.3",
     "np": "^6.2.3",
-    "typescript": "^3.9.3"
+    "typescript": "^3.9.5"
   }
 }
