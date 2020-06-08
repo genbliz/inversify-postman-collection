@@ -65,6 +65,9 @@ function getRouteDefData({
         const defKey5 = controller[0].toLowerCase() + controller.slice(1);
         const defKey6 = controller[0].toUpperCase() + controller.slice(1);
         //
+        const defKey7 = groupName.toUpperCase();
+        const defKey8 = controller.toUpperCase();
+        //
         const def =
           routeDefData[defKey1] ||
           routeDefData[defKey2] ||
@@ -74,7 +77,10 @@ function getRouteDefData({
           routeDefData[defKey4] ||
           routeDefData[defKey5] ||
           routeDefData[defKey6] ||
-          routeDefData[controller];
+          routeDefData[controller] ||
+          //
+          routeDefData[defKey7] ||
+          routeDefData[defKey8];
 
         if (def) {
           return def[routeRawDefName];
