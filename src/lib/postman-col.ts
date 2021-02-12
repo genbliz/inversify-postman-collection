@@ -1,11 +1,5 @@
 import type { IInversifyRouteDefInput, IRouteDefData } from "../types/type";
-import {
-  Collection,
-  Item,
-  Url,
-  ItemGroup,
-  RequestDefinition,
-} from "postman-collection";
+import { Collection, Item, Url, ItemGroup, RequestDefinition } from "postman-collection";
 import { getRouteDefData, getValidQueryParams } from "../helpers";
 
 export function getPostmanCollection({
@@ -23,14 +17,10 @@ export function getPostmanCollection({
 }) {
   const myCollection = new Collection({ name: title });
   myCollection.describe(`${title}`);
-  const header = headerEnvVariables?.length
-    ? headerEnvVariables.map(([key, value]) => ({ key, value }))
-    : undefined;
+  const header = headerEnvVariables?.length ? headerEnvVariables.map(([key, value]) => ({ key, value })) : undefined;
 
   routesDefs.forEach(({ endpoints, controller }) => {
-    const groupName = controller
-      .split("Controller")[0]
-      .replace(/([a-z](?=[A-Z]))/g, "$1 ");
+    const groupName = controller.split("Controller")[0].replace(/([a-z](?=[A-Z]))/g, "$1 ");
     const groupItem = new ItemGroup<any>({
       name: groupName,
     });
@@ -44,9 +34,7 @@ export function getPostmanCollection({
       }
       let url = [baseUrl, urlPath].filter((x) => x).join("");
 
-      const { queryParams, routeName, routeRawDefName } = getValidQueryParams(
-        args
-      );
+      const { queryParams, routeName, routeRawDefName } = getValidQueryParams(args);
 
       if (queryParams?.length) {
         const newUrl = new Url(url);
@@ -94,7 +82,7 @@ export function getPostmanCollection({
           name: routeDescribe ?? routeName ?? url,
           request: requestDef,
           response: undefined,
-        })
+        }),
       );
     });
     myCollection.items.add(groupItem);

@@ -1,8 +1,4 @@
-import type {
-  IInversifyRouteDefInput,
-  IRouteDefData,
-  IInversifyOutputCustom,
-} from "../types/type";
+import type { IInversifyRouteDefInput, IRouteDefData, IInversifyOutputCustom } from "../types/type";
 import { getRouteDefData, getValidQueryParams } from "../helpers";
 
 export function getRouteDefinitions({
@@ -20,26 +16,19 @@ export function getRouteDefinitions({
   type IEndPoint = IInversifyOutputCustom["endpoints"][0];
   routesDefs.forEach(({ endpoints, controller }) => {
     const dataRoutesDef = {} as IInversifyOutputCustom;
-    const groupName = controller
-      .split("Controller")[0]
-      .replace(/([a-z](?=[A-Z]))/g, "$1 ");
+    const groupName = controller.split("Controller")[0].replace(/([a-z](?=[A-Z]))/g, "$1 ");
     dataRoutesDef.group = groupName;
     dataRoutesDef.endpoints = [];
     endpoints.forEach(({ route, args }) => {
       //
       const methodRote = route.split(" ");
-      const method:
-        | "POST"
-        | "PUT"
-        | "GET" = methodRote[0].trim().toUpperCase() as any;
+      const method: "POST" | "PUT" | "GET" = methodRote[0].trim().toUpperCase() as any;
       let urlPath = methodRote[1].trim();
       if (urlPath.endsWith("/")) {
         urlPath = urlPath.slice(0, -1);
       }
       const url = [baseUrl, urlPath].filter((x) => x).join("");
-      const { queryParams, routeName, routeRawDefName } = getValidQueryParams(
-        args
-      );
+      const { queryParams, routeName, routeRawDefName } = getValidQueryParams(args);
 
       const endpoint = { url, method } as IEndPoint;
 

@@ -57,10 +57,7 @@ export function getRouteDefData({
       // console.log({ _def });
 
       if (_def) {
-        if (
-          _def.request !== undefined &&
-          (_method === "POST" || _method === "PUT")
-        ) {
+        if (_def.request !== undefined && (_method === "POST" || _method === "PUT")) {
           requestBody = _def.request;
         }
         if (_def.response !== undefined) {
