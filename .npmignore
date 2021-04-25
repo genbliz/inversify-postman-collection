@@ -1,3 +1,5 @@
 src/
 dumps/
 tsconfig.json
+dist-dev
+_help
