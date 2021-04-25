@@ -67,6 +67,8 @@ const Auth = {
 export const routeDefinitionData = { Auth /* this will map to AuthController */ }
 ```
 
+### Generate postman collection
+
 ```typescript
 // controllers/xyz.ts
 
