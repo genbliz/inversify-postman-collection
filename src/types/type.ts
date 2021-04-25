@@ -25,6 +25,6 @@ export interface IInversifyOutputCustom {
     url: string;
     queryParams?: string[];
     requestBody?: any;
-    response?: any;
+    response?: any | Record<string, any> | Record<string, any>[];
   }[];
 }

@@ -1,0 +1,3545 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" />
+      <style>
+  html {
+    box-sizing: border-box;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', 'Lato', 'Segoe UI', 'sans-serif', Oxygen;
+  }
+
+  body {
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 100px;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+
+  table {
+    width: 100%;
+    position: relative;
+    border-collapse: collapse;
+    /* background-color: transparent; */
+  }
+
+  td,
+  th {
+    border: 1px solid #bdb9b9;
+    padding: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: left;
+  }
+
+  td:first-of-type,
+  th:first-of-type {
+    padding-left: 8px;
+  }
+
+  td:last-of-type,
+  th:last-of-type {
+    padding-right: 8px;
+  }
+
+  th.left,
+  td.left {
+    text-align: left;
+  }
+
+  th.center,
+  td.center {
+    text-align: center;
+  }
+
+  td.numeric,
+  td.number,
+  td.right,
+  th.number,
+  th.right,
+  th.numeric {
+    text-align: right;
+  }
+
+  thead {
+    white-space: nowrap;
+  }
+
+  thead tr {
+    height_: 100%;
+  }
+
+  thead th {
+    position: relative;
+    vertical-align: bottom;
+    text-overflow: ellipsis;
+    line-height: 10px;
+    letter-spacing: 0;
+    color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 8px;
+    box-sizing: border-box;
+    /** font-size: 1em; */
+    font-weight: bold;
+  }
+
+  tbody tr {
+    position: relative;
+    height: 25px;
+    transition-duration: 0.9s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
+  }
+
+  tfoot {
+    font-weight: 700;
+    background-color: #bdb9b9;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin-top: 5px;
+    margin-bottom: 3px;
+  }
+
+  .root-content {
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* min-height: 100%; */
+    /* background-color: rgb(201, 201, 197); */
+  }
+
+  .group {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .group h1 {
+    margin-top: 20px;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .endpoint {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .endpoint:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* Add some padding inside the card container */
+  .endpoint-container {
+    padding: 10px 10px;
+  }
+
+  .endpoint-container td textarea {
+    border: none;
+    resize: none;
+    outline: none;
+  }
+
+  .endpoint h2 {
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .code {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    padding: 10px;
+  }
+
+  </style>
+      <title>Max Api Definitions</title>
+    </head>
+    <body>
+      <div class="root-content">
+      
+<div class="group">
+  <h1>Batch</h1>
+  
+  <div class="endpoint">
+  <h2>Get all</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/batch</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Create</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/batch</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "name": "",
+  "slug": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": 0,
+  "name": "",
+  "slug": "",
+  "created_at": "",
+  "updated_at": null
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Update</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/batch</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">PUT</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": 0,
+  "name": "",
+  "slug": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": 0,
+  "name": "",
+  "slug": "",
+  "created_at": "",
+  "updated_at": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/batch/:id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+</div>
+  
+
+<div class="group">
+  <h1>Champion</h1>
+  
+  <div class="endpoint">
+  <h2>Populate firebase champion data from db</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/champion/populate/firebase</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by device imei</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/champion/imei/:device_imei</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+</div>
+  
+
+<div class="group">
+  <h1>Champion Vehicle History</h1>
+  
+  <div class="endpoint">
+  <h2>Get by id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/champion-vehicle-history/:id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by champion id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/champion-vehicle-history/champion/:champion_id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get vehicle id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/champion-vehicle-history/vehicle/:vehicle_id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+</div>
+  
+
+<div class="group">
+  <h1>Health</h1>
+  
+  <div class="endpoint">
+  <h2>Health check route</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/health</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Csv upload web page</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/health/csv-vehicle-upload</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>View all available route</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/health/routes</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Download postman collection</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/health/postman</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+</div>
+  
+
+<div class="group">
+  <h1>Hpv</h1>
+  
+  <div class="endpoint">
+  <h2>Get all</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/hpv</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/hpv/:id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Update</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/hpv</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">PUT</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by pricing template id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/hpv/pricing-template/:pricing_template_id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+</div>
+  
+
+<div class="group">
+  <h1>Hpv History</h1>
+  
+  <div class="endpoint">
+  <h2>Get all</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/hpv-history</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/hpv-history/:id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by hpv id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/hpv-history/hpv/:hpv_id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by pricing template id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/hpv-history/pricing-template/:pricing_template_id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+</div>
+  
+
+<div class="group">
+  <h1>Location</h1>
+  
+  <div class="endpoint">
+  <h2>Get all</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/location</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Create</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/location</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "code": "",
+  "name": "",
+  "slug": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": 0,
+  "code": "",
+  "name": "",
+  "slug": "",
+  "created_at": "",
+  "updated_at": null
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Update</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/location</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">PUT</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": 0,
+  "code": "",
+  "name": "",
+  "slug": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": 0,
+  "code": "",
+  "name": "",
+  "slug": "",
+  "created_at": "",
+  "updated_at": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/location/:id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+</div>
+  
+
+<div class="group">
+  <h1>Manufacturer</h1>
+  
+  <div class="endpoint">
+  <h2>Get all</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/manufacturer</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Create</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/manufacturer</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "name": "",
+  "slug": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": 0,
+  "name": "",
+  "slug": "",
+  "created_at": "",
+  "updated_at": null
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Update</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/manufacturer</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">PUT</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": 0,
+  "name": "",
+  "slug": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": 0,
+  "name": "",
+  "slug": "",
+  "created_at": "",
+  "updated_at": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/manufacturer/:id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get value list</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/manufacturer/list/value-list</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+</div>
+  
+
+<div class="group">
+  <h1>Model</h1>
+  
+  <div class="endpoint">
+  <h2>Get all</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/model</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Create</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/model</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": 0,
+  "name": "",
+  "slug": "",
+  "manufacturer_id": 0,
+  "vehicle_type_id": 0
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": 0,
+  "name": "",
+  "slug": "",
+  "manufacturer_id": 0,
+  "vehicle_type_id": 0,
+  "created_at": "",
+  "updated_at": null
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Update</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/model</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">PUT</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": 0,
+  "name": "",
+  "slug": "",
+  "manufacturer_id": 0,
+  "vehicle_type_id": 0
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": 0,
+  "name": "",
+  "slug": "",
+  "manufacturer_id": 0,
+  "vehicle_type_id": 0,
+  "created_at": "",
+  "updated_at": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Search model by name</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/model/search</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+    <tr>
+      <td>query</td>
+      <td class="code">
+        <div>search_term</div>
+      </td>
+    </tr>
+    
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/model/:id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by manufacturer id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/model/manufacturer/:manufacturer_id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+</div>
+  
+
+<div class="group">
+  <h1>Plate Number History</h1>
+  
+  <div class="endpoint">
+  <h2>Get all</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/plate-number-history</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by plate number</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/plate-number-history/plate-number/:plate_number</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by vehicle id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/plate-number-history/vehicle/:vehicle_id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/plate-number-history/:id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+</div>
+  
+
+<div class="group">
+  <h1>Pv</h1>
+  
+  <div class="endpoint">
+  <h2>Get all</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/pv</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/pv/:id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by pricing template id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/pv/pricing-template/:pricing_template_id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+</div>
+  
+
+<div class="group">
+  <h1>Pv History</h1>
+  
+  <div class="endpoint">
+  <h2>Get all</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/pv-history</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/pv-history/:id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by pv id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/pv-history/pv/:pv_id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by pricing template id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/pv-history/pricing-template/:pricing_template_id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+</div>
+  
+
+<div class="group">
+  <h1>Sim Network</h1>
+  
+  <div class="endpoint">
+  <h2>Get all</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/sim-network</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Create</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/sim-network</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Update</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/sim-network</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">PUT</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/sim-network/:id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+</div>
+  
+
+<div class="group">
+  <h1>Trim</h1>
+  
+  <div class="endpoint">
+  <h2>Get all</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/trim</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Create</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/trim</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "model_id": 0,
+  "name": "",
+  "slug": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "model_id": 0,
+  "name": "",
+  "slug": "",
+  "created_at": "",
+  "updated_at": null
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Update</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/trim</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">PUT</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": 0,
+  "model_id": 0,
+  "name": "",
+  "slug": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "model_id": 0,
+  "name": "",
+  "slug": "",
+  "created_at": "",
+  "updated_at": "",
+  "id": 0
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/trim/:id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by model id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/trim/model/:model_id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+</div>
+  
+
+<div class="group">
+  <h1>Vehicle</h1>
+  
+  <div class="endpoint">
+  <h2>Get vehicle partner report</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/partner/report</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+    <tr>
+      <td>query</td>
+      <td class="code">
+        <div>day_stamp</div>
+<div>from_day_stamp</div>
+<div>to_day_stamp</div>
+<div>location_filter</div>
+<div>search_query</div>
+<div>partner_id</div>
+      </td>
+    </tr>
+    
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get all vehicles and linked partners</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/partner</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+    <tr>
+      <td>query</td>
+      <td class="code">
+        <div>vehicle_id</div>
+<div>partner_id</div>
+      </td>
+    </tr>
+    
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Link one vehicle with one partner</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/partner/link</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "vehicle_id": "",
+  "partner_id": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": "",
+  "vehicle_id": "",
+  "partner_id": "",
+  "updated_at": null,
+  "created_at": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Link multiple vehicles with one partner</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/partner/link/batched-vehicles</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "vehicle_ids": [
+    ""
+  ],
+  "partner_id": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": "",
+  "vehicle_id": "",
+  "partner_id": "",
+  "updated_at": null,
+  "created_at": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Link multiple partners with one vehicle</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/partner/link/batched-partners</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "vehicle_id": "",
+  "partner_ids": [
+    ""
+  ]
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": "",
+  "vehicle_id": "",
+  "partner_id": "",
+  "updated_at": null,
+  "created_at": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get all vehicle with optional parameters</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+    <tr>
+      <td>query</td>
+      <td class="code">
+        <div>search_query</div>
+<div>include_related</div>
+<div>include_assigned_only</div>
+<div>has_pricing_template_only</div>
+<div>has_no_pricing_template_only</div>
+<div>include_unassigned_only</div>
+<div>page</div>
+<div>size</div>
+<div>fields</div>
+<div>include_defined_relations</div>
+<div>partner_id</div>
+<div>pricing_template_id</div>
+<div>order_by_field</div>
+<div>order_by_desc</div>
+<div>filter_by_field_key</div>
+<div>filter_by_field_value</div>
+<div>filter_by_field_type</div>
+      </td>
+    </tr>
+    
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Search vehicle</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/search</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+    <tr>
+      <td>query</td>
+      <td class="code">
+        <div>search_query</div>
+<div>fields</div>
+<div>include_defined_relations</div>
+<div>include_assigned_only</div>
+<div>include_related</div>
+<div>has_pricing_template_only</div>
+<div>has_no_pricing_template_only</div>
+<div>include_unassigned_only</div>
+<div>page</div>
+<div>size</div>
+<div>partner_id</div>
+<div>pricing_template_id</div>
+<div>order_by_field</div>
+<div>order_by_desc</div>
+      </td>
+    </tr>
+    
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Filter vehicle</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/filter</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+    <tr>
+      <td>query</td>
+      <td class="code">
+        <div>location_id</div>
+<div>vehicle_type_id</div>
+<div>batch_id</div>
+<div>fields</div>
+<div>include_defined_relations</div>
+<div>include_assigned_only</div>
+<div>include_related</div>
+<div>has_pricing_template_only</div>
+<div>has_no_pricing_template_only</div>
+<div>include_unassigned_only</div>
+<div>page</div>
+<div>size</div>
+<div>partner_id</div>
+<div>pricing_template_id</div>
+<div>order_by_field</div>
+<div>order_by_desc</div>
+      </td>
+    </tr>
+    
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Create vehicle</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "vehicle_type_id": 0,
+  "model_id": 0,
+  "max_vehicle_id": "",
+  "device_imei": "",
+  "engine_number": "",
+  "plate_number": "?",
+  "champion_id": "?",
+  "service_type": "?",
+  "is_max_vehicle": true,
+  "documents_file_names_csv": "?",
+  "license_expiration_date": "?",
+  "year": 0,
+  "model_number": "",
+  "manufacturer_id": 0,
+  "sim_serial_no": "",
+  "chassis_no": "",
+  "location_id": 0,
+  "pricing_template_id": "",
+  "device_phone": "",
+  "batch_id": 0,
+  "trim_id": 0,
+  "partner_id": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": "",
+  "vehicle_type_id": 0,
+  "model_id": 0,
+  "max_vehicle_id": "",
+  "device_imei": "",
+  "engine_number": "",
+  "plate_number": "?",
+  "champion_id": "?",
+  "service_type": "?",
+  "is_max_vehicle": "boolean",
+  "documents_file_names_csv": "?",
+  "license_expiration_date": "?",
+  "year": 0,
+  "model_number": "",
+  "manufacturer_id": 0,
+  "sim_serial_no": "",
+  "chassis_no": "",
+  "location_id": 0,
+  "pricing_template_id": "",
+  "device_phone": "",
+  "batch_id": 0,
+  "hpv_id": 0,
+  "pv_id": 0,
+  "trim_id": 0,
+  "vehicle_status_id": 0,
+  "max_global_id": "",
+  "sim_network_id": 0,
+  "created_at": "",
+  "updated_at": null
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get Csv upload template for vehicle</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/csv/get-upload-template</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Csv Upload vehicle data</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/upload/csv</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+    <tr>
+      <td>query</td>
+      <td class="code">
+        <div>access_secret</div>
+      </td>
+    </tr>
+    
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Update vehicle</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">PUT</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "vehicle_type_id": 0,
+  "model_id": 0,
+  "max_vehicle_id": "",
+  "device_imei": "",
+  "engine_number": "",
+  "plate_number": "?",
+  "champion_id": "?",
+  "service_type": "?",
+  "is_max_vehicle": true,
+  "documents_file_names_csv": "?",
+  "license_expiration_date": "?",
+  "year": 0,
+  "model_number": "",
+  "manufacturer_id": 0,
+  "sim_serial_no": "",
+  "chassis_no": "",
+  "location_id": 0,
+  "pricing_template_id": "",
+  "device_phone": "",
+  "batch_id": 0,
+  "trim_id": 0,
+  "partner_id": "",
+  "id": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": "",
+  "vehicle_type_id": 0,
+  "model_id": 0,
+  "max_vehicle_id": "",
+  "device_imei": "",
+  "engine_number": "",
+  "plate_number": "?",
+  "champion_id": "?",
+  "service_type": "?",
+  "is_max_vehicle": "boolean",
+  "documents_file_names_csv": "?",
+  "license_expiration_date": "?",
+  "year": 0,
+  "model_number": "",
+  "manufacturer_id": 0,
+  "sim_serial_no": "",
+  "chassis_no": "",
+  "location_id": 0,
+  "pricing_template_id": "",
+  "device_phone": "",
+  "batch_id": 0,
+  "hpv_id": 0,
+  "pv_id": 0,
+  "trim_id": 0,
+  "vehicle_status_id": 0,
+  "max_global_id": "",
+  "sim_network_id": 0,
+  "created_at": "",
+  "updated_at": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Initialize vehicle code generator table</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/populate-initialize/max-vehicle-code-gen</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Initialize max global vehicle code generator table</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/populate-initialize/vehicle-max-global-code-table</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Create max global id for all vehicles</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/populate/max-global-id-for-all</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Fetch champion and vehicle info</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/info/champion-and-vehicle</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+    <tr>
+      <td>query</td>
+      <td class="code">
+        <div>vehicle_id</div>
+      </td>
+    </tr>
+    
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Assign champion to vehicle</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/champion/assign</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "champion_id": "",
+  "vehicle_id": "",
+  "has_insurance": "boolean",
+  "location": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": "",
+  "vehicle_type_id": 0,
+  "model_id": 0,
+  "max_vehicle_id": "",
+  "device_imei": "",
+  "engine_number": "",
+  "plate_number": "?",
+  "champion_id": "?",
+  "service_type": "?",
+  "is_max_vehicle": "boolean",
+  "documents_file_names_csv": "?",
+  "license_expiration_date": "?",
+  "year": 0,
+  "model_number": "",
+  "manufacturer_id": 0,
+  "sim_serial_no": "",
+  "chassis_no": "",
+  "location_id": 0,
+  "pricing_template_id": "",
+  "device_phone": "",
+  "batch_id": 0,
+  "hpv_id": 0,
+  "pv_id": 0,
+  "trim_id": 0,
+  "vehicle_status_id": 0,
+  "max_global_id": "",
+  "sim_network_id": 0,
+  "created_at": "",
+  "updated_at": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>UnAssign champion from vehicle</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/champion/un-assign</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "vehicle_id": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": "",
+  "vehicle_type_id": 0,
+  "model_id": 0,
+  "max_vehicle_id": "",
+  "device_imei": "",
+  "engine_number": "",
+  "plate_number": "?",
+  "champion_id": "?",
+  "service_type": "?",
+  "is_max_vehicle": "boolean",
+  "documents_file_names_csv": "?",
+  "license_expiration_date": "?",
+  "year": 0,
+  "model_number": "",
+  "manufacturer_id": 0,
+  "sim_serial_no": "",
+  "chassis_no": "",
+  "location_id": 0,
+  "pricing_template_id": "",
+  "device_phone": "",
+  "batch_id": 0,
+  "hpv_id": 0,
+  "pv_id": 0,
+  "trim_id": 0,
+  "vehicle_status_id": 0,
+  "max_global_id": "",
+  "sim_network_id": 0,
+  "created_at": "",
+  "updated_at": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Assign pricing template to vehicle</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/pricing-template/assign</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "vehicle_ids": [],
+  "pricing_template_id": "",
+  "hpv": {
+    "value": 0,
+    "daily_remit": 0,
+    "insurance_duration": 0,
+    "standard_duration": 0
+  },
+  "pv": {
+    "original_value": 0,
+    "current_value": 0
+  }
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "pricing_template_id": "",
+  "vehicle": {
+    "id": "",
+    "vehicle_type_id": 0,
+    "model_id": 0,
+    "max_vehicle_id": "",
+    "device_imei": "",
+    "engine_number": "",
+    "plate_number": "?",
+    "champion_id": "?",
+    "service_type": "?",
+    "is_max_vehicle": "boolean",
+    "documents_file_names_csv": "?",
+    "license_expiration_date": "?",
+    "year": 0,
+    "model_number": "",
+    "manufacturer_id": 0,
+    "sim_serial_no": "",
+    "chassis_no": "",
+    "location_id": 0,
+    "pricing_template_id": "",
+    "device_phone": "",
+    "batch_id": 0,
+    "hpv_id": 0,
+    "pv_id": 0,
+    "trim_id": 0,
+    "vehicle_status_id": 0,
+    "max_global_id": "",
+    "sim_network_id": 0,
+    "created_at": "",
+    "updated_at": ""
+  },
+  "vehicle_id": "",
+  "success": "boolean",
+  "message": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Assign batch to vehicle</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/batch/assign</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "batch_id": 0,
+  "vehicle_id": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": "",
+  "vehicle_type_id": 0,
+  "model_id": 0,
+  "max_vehicle_id": "",
+  "device_imei": "",
+  "engine_number": "",
+  "plate_number": "?",
+  "champion_id": "?",
+  "service_type": "?",
+  "is_max_vehicle": "boolean",
+  "documents_file_names_csv": "?",
+  "license_expiration_date": "?",
+  "year": 0,
+  "model_number": "",
+  "manufacturer_id": 0,
+  "sim_serial_no": "",
+  "chassis_no": "",
+  "location_id": 0,
+  "pricing_template_id": "",
+  "device_phone": "",
+  "batch_id": 0,
+  "hpv_id": 0,
+  "pv_id": 0,
+  "trim_id": 0,
+  "vehicle_status_id": 0,
+  "max_global_id": "",
+  "sim_network_id": 0,
+  "created_at": "",
+  "updated_at": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Populate firebase vehicle data from db</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/populate/firebase</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+    <tr>
+      <td>query</td>
+      <td class="code">
+        <div>max_vehicle_ids</div>
+      </td>
+    </tr>
+    
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get vehicle by champion id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/champion/:champion_id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get vehicle by champion ids</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/champions/selected</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get vehicle by device imei</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/imei/:device_imei</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get vehicle by id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle/:id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+</div>
+  
+
+<div class="group">
+  <h1>Vehicle Status</h1>
+  
+  <div class="endpoint">
+  <h2>Get all</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle-status</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Create</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle-status</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Update</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle-status</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">PUT</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle-status/:id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+</div>
+  
+
+<div class="group">
+  <h1>Vehicle Type</h1>
+  
+  <div class="endpoint">
+  <h2>Get all</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle-type</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Create</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle-type</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "code": "",
+  "name": "",
+  "slug": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": 0,
+  "code": "",
+  "name": "",
+  "slug": "",
+  "created_at": "",
+  "updated_at": null
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Update</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle-type</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">PUT</td>
+        </tr>
+
+        
+
+        
+    <tr>
+      <td>request</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": 0,
+  "code": "",
+  "name": "",
+  "slug": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+        
+    <tr>
+      <td>response</td>
+      <td style="padding: 0px; margin: 0px">
+        <textarea readonly rows="10" style="width: 100%">
+{
+  "id": 0,
+  "code": "",
+  "name": "",
+  "slug": "",
+  "created_at": "",
+  "updated_at": ""
+}
+        </textarea>
+      </td>
+    </tr>
+    
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+
+  <div class="endpoint">
+  <h2>Get by id</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/vehicle-type/:id</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">GET</td>
+        </tr>
+
+        
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+</div>
+  
+
+<div class="group">
+  <h1>Web Hook</h1>
+  
+  <div class="endpoint">
+  <h2>Run web hook</h2>
+  <div class="endpoint-container">
+    <table>
+      <body>
+        <tr>
+          <td>url</td>
+          <td class="code">{{vehicle-service-api-base-url}}/v1/web-hook/distance-covered-done</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td class="code">POST</td>
+        </tr>
+
+        
+    <tr>
+      <td>query</td>
+      <td class="code">
+        <div>day_stamp</div>
+      </td>
+    </tr>
+    
+
+        
+
+        
+
+      </body>
+    </table>
+  </div>
+</div>
+  
+</div>
+  
+      </div>
+    </body>
+  </html>
+  
