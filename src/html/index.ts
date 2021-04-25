@@ -24,6 +24,7 @@ export function convertRouteDefinitionToHtml({
     </head>
     <body>
       <div class="root-content">
+      <h1>${apiTitle}</h1>
       ${rootContents.join("\n")}
       </div>
     </body>

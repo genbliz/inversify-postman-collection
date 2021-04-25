@@ -1,6 +1,8 @@
 export function getefinedStyles() {
   //
   const css = `
+
+
   html {
     box-sizing: border-box;
   }
@@ -21,6 +23,7 @@ export function getefinedStyles() {
     height: auto;
     max-width: 100%;
     margin-bottom: 100px;
+    margin-left: 20px;
   }
 
   *,
@@ -127,13 +130,21 @@ export function getefinedStyles() {
     flex-direction: column;
     justify-content: center;
     align-items: center; */
-    /* min-height: 100%; */
-    /* background-color: rgb(201, 201, 197); */
+    min-height: 100%;
+  }
+
+  .root-content>h1 {
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 900px;
   }
 
   .group {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
+    margin-top: 70px;
   }
 
   .group h1 {
@@ -153,7 +164,7 @@ export function getefinedStyles() {
 
   /* On mouse-over, add a deeper shadow */
   .endpoint:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 10px 10px rgba(0, 0, 0, 0.2);
   }
 
   /* Add some padding inside the card container */
@@ -165,12 +176,14 @@ export function getefinedStyles() {
     border: none;
     resize: none;
     outline: none;
+    font-family: 'Courier New', Courier, monospace;
   }
 
   .endpoint h2 {
     font-size: 16px;
     text-align: center;
     padding: 5px;
+    padding-top: 10px;
   }
 
   .code {
@@ -179,7 +192,8 @@ export function getefinedStyles() {
     padding: 10px;
   }
 
-  `;
 
+
+  `;
   return css;
 }
