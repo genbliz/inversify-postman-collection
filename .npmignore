@@ -1,5 +1,4 @@
-src/
-dumps/
-tsconfig.json
+src/test/
 dist-dev
 _help
+dumps
