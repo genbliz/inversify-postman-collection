@@ -8,10 +8,8 @@
     "dist"
   ],
   "scripts": {
-    "pub": "pika publish",
-    "inst": "pika install",
-    "build": "pika build",
-    "version": "npm run build",
+    "build": "rimraf ./dist && tsc -b",
+    "prepare": "npm run build",
     "build-dev": "rimraf ./dist && tsc -b",
     "prettier-format-fix": "prettier --write \"src/**/*.{ts,js,json}\"",
     "prettier-different": "prettier --list-different \"src/**/*.{ts,js,json}\"",
