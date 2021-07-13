@@ -1,4 +1,4 @@
-import type { IInversifyRouteDefInput, IRouteDefData, IInversifyOutputCustom } from "../types/type";
+import type { IInversifyRouteDefInput, IRouteDefData, IInversifyOutputCustom } from "../types";
 import { getRouteDefData, getValidQueryParams } from "../helpers";
 
 export function getRouteDefinitions({

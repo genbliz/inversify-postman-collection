@@ -1,4 +1,4 @@
-import { IInversifyOutputCustom } from "./../types/type";
+import { IInversifyOutputCustom } from "../types";
 
 function convertEndPoint(endPoint: IInversifyOutputCustom["endpoints"][0]) {
   let queryParams01 = "";

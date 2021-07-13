@@ -1,4 +1,4 @@
-import { IRouteDefData } from "../types/type";
+import { IRouteDefData } from "../types";
 
 export function getRouteDefData({
   routeDefData,
@@ -51,20 +51,20 @@ export function getRouteDefData({
         return null;
       };
 
-      const _def = _getDef();
-      const _method = method.toUpperCase();
+      const def01 = _getDef();
+      const method01 = method.toUpperCase();
 
       // console.log({ _def });
 
-      if (_def) {
-        if (_def.request !== undefined && (_method === "POST" || _method === "PUT")) {
-          requestBody = _def.request;
+      if (def01) {
+        if (def01.request !== undefined && (method01 === "POST" || method01 === "PUT")) {
+          requestBody = def01.request;
         }
-        if (_def.response !== undefined) {
-          responseBody = _def.response;
+        if (def01.response !== undefined) {
+          responseBody = def01.response;
         }
-        if (_def.describe) {
-          routeDescribe = _def.describe;
+        if (def01.describe) {
+          routeDescribe = def01.describe;
         }
       }
     } catch (error) {

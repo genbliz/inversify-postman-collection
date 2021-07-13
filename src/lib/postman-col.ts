@@ -1,4 +1,4 @@
-import type { IInversifyRouteDefInput, IRouteDefData } from "../types/type";
+import type { IInversifyRouteDefInput, IRouteDefData } from "../types";
 import { Collection, Item, Url, ItemGroup, RequestDefinition } from "postman-collection";
 import { getRouteDefData, getValidQueryParams } from "../helpers";
 

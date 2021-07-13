@@ -1,4 +1,4 @@
-import type { IInversifyOutputCustom } from "../types/type";
+import type { IInversifyOutputCustom } from "../types";
 import { getefinedStyles } from "./constants";
 import { convertGroup } from "./group";
 
