@@ -21,9 +21,8 @@ export function getRouteDefinitions({
     dataRoutesDef.endpoints = [];
     endpoints.forEach(({ route, args }) => {
       //
-      const methodRote = route.split(" ");
-      const method: "POST" | "PUT" | "GET" = methodRote[0].trim().toUpperCase() as any;
-      let urlPath = methodRote[1].trim();
+      let [method01, urlPath] = route.split(" ").map((x) => x.trim());
+      const method: "POST" | "PUT" | "GET" = method01.toUpperCase() as any;
       if (urlPath.endsWith("/")) {
         urlPath = urlPath.slice(0, -1);
       }

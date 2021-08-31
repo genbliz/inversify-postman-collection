@@ -26,9 +26,7 @@ export function getPostmanCollection({
     });
 
     endpoints.forEach(({ route, args }) => {
-      const methodRoute = route.split(" ");
-      const method = methodRoute[0].trim().toUpperCase();
-      let urlPath = methodRoute[1].trim();
+      let [method, urlPath] = route.split(" ").map((x) => x.trim());
       if (urlPath.endsWith("/")) {
         urlPath = urlPath.slice(0, -1);
       }
