@@ -13,8 +13,8 @@ export function getRouteDefData({
   method: string;
   controller: string;
 }) {
-  let requestBody: any = undefined;
-  let responseBody: any = undefined;
+  let requestBody: any;
+  let responseBody: any;
   let routeDescribe: string | null = null;
   if (routeDefData && routeRawDefName && groupName) {
     try {
