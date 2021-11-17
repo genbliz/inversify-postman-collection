@@ -39,7 +39,7 @@ export function getPostmanCollection({
         queryParams.forEach((key) => {
           newUrl.addQueryParams(key);
         });
-        url = newUrl.getRaw();
+        url = newUrl.toString();
       }
 
       const { requestBody, responseBody, routeDescribe } = getRouteDefData({
