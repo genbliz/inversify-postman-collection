@@ -22,7 +22,7 @@ export function getRouteDefinitions({
     endpoints.forEach(({ route, args }) => {
       //
       let [method01, urlPath] = route.split(" ").map((x) => x.trim());
-      const method: "POST" | "PUT" | "GET" = method01.toUpperCase() as any;
+      const method = method01.toUpperCase() as "POST" | "PUT" | "GET";
       if (urlPath.endsWith("/")) {
         urlPath = urlPath.slice(0, -1);
       }

@@ -71,11 +71,13 @@ export function getRouteDefData({
       requestBody = undefined;
       responseBody = undefined;
       routeDescribe = null;
-      // console.log(error);
     }
   }
-  // console.log({ requestBody, responseBody, routeDescribe });
-  return { requestBody, responseBody, routeDescribe };
+  return {
+    requestBody,
+    responseBody,
+    routeDescribe,
+  };
 }
 
 export function getValidQueryParams(args?: string[]) {

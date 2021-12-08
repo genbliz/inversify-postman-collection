@@ -1,5 +1,5 @@
 import type { IInversifyRouteDefInput, IRouteDefData } from "../types";
-import { Collection, Item, Url, ItemGroup, RequestDefinition } from "postman-collection";
+import { Collection, Item, Url, ItemGroup, RequestDefinition, HeaderDefinition } from "postman-collection";
 import { getRouteDefData, getValidQueryParams } from "../helpers";
 
 export function getPostmanCollection({
@@ -21,6 +21,7 @@ export function getPostmanCollection({
 
   routesDefs.forEach(({ endpoints, controller }) => {
     const groupName = controller.split("Controller")[0].replace(/([a-z](?=[A-Z]))/g, "$1 ");
+
     const groupItem = new ItemGroup<any>({
       name: groupName,
     });
@@ -50,10 +51,24 @@ export function getPostmanCollection({
         controller,
       });
 
+      const defaultHeader: HeaderDefinition[] = [
+        {
+          key: "Content-Type",
+          value: "application/json",
+        },
+        {
+          key: "Accept",
+          value: "application/json",
+        },
+      ];
+
       const requestDef: RequestDefinition = {
         url,
         method,
-        header,
+        header: [...defaultHeader, ...(header || [])],
+        auth: {
+          type: "noauth",
+        },
       };
 
       if (requestBody !== undefined) {
